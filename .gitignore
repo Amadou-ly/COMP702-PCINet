@@ -1,3 +1,7 @@
 # Data / results / models
-streetview/my_images/
-
+.claude/
+~$*
+*.pt
+missing_images.txt
+CHANGES.md
+DISSERTATION_NOTES.md

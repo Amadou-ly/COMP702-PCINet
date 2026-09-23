@@ -1,0 +1,12 @@
+Experiment,Config,Accuracy,Balanced Acc,MAE,Soft Acc (±1),Kappa,F1,Paper MAE Target (0.66),Paper Soft Acc Target (0.8973)
+Baseline,EfficientNetV2-S + FocalLoss + WRS,0.4355,0.4270,0.7109,0.8722,0.2593,0.4242,Not met,Not met
+Run 1,Attentive CutMix α=1.0 PROB=0.5,0.4119,0.4436,0.7816,0.8486,0.2417,,Not met,Not met
+Run 2,Attentive CutMix α=2.0 PROB=0.5,0.4541,0.4546,0.6836,0.8871,0.2797,,Not met,Not met
+Run 5,Attentive CutMix α=2.0 PROB=0.7,0.4727,0.4474,0.6365,0.9069,0.2883,0.4739,Met ✓,Met ✓
+Run 6,Attentive CutMix α=3.0 PROB=0.7,0.4715,0.3987,0.6141,0.9280,0.2759,0.4646,Met ✓,Met ✓
+Run 7,Attentive CutMix α=2.0 PROB=0.7 + OrdinalFL w=0.1,0.4653,0.4293,0.6377,0.9132,0.2779,0.4641,Met ✓,Met ✓
+GAIN AM w=0.1,Run 5 + Attention Mining AM_WEIGHT=0.1,0.4516,0.3942,0.6489,0.9094,0.2599,0.4442,Met ✓,Met ✓
+GAIN AG w=0.1,Run 5 + Attention Grounding AG_WEIGHT=0.1,0.4355,0.4865,0.7667,0.8375,0.2795,0.4179,Not met,Not met
+GAIN AG w=0.05,Run 5 + Attention Grounding AG_WEIGHT=0.05,0.4566,0.4406,0.6762,0.8834,0.2763,0.4444,Not met,Not met
+GAIN AG w=0.02,Run 5 + Attention Grounding AG_WEIGHT=0.02,0.4628,0.4109,0.6476,0.9032,0.2769,0.4581,Met ✓,Met ✓
+Ensemble (0.7/0.3),Run 7 × 0.7 + GAIN AG w=0.02 × 0.3,0.4677,0.4287,0.6228,0.9243,0.2791,,Met ✓,Met ✓

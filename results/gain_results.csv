@@ -1,0 +1,6 @@
+Experiment,Config,Accuracy,Balanced Acc,MAE,Soft Acc (±1),Kappa,F1,Best Epoch,Stopped Epoch,Paper MAE Met,Paper Soft Acc Met,Notes
+GAIN AM w=0.3,AM_WEIGHT=0.3 on Run 5 base,,,,,,,,7,No,No,Aborted — class collapse toward PCI 4 by epoch 7
+GAIN AM w=0.1,AM_WEIGHT=0.1 on Run 5 base,0.4516,0.3942,0.6489,0.9094,0.2599,0.4442,34,49,Yes,Yes,Both targets met but Bal Acc below baseline (0.4270); PCI 0 recall=8%
+GAIN AG w=0.1,AG_WEIGHT=0.1 on Run 5 base,0.4355,0.4865,0.7667,0.8375,0.2795,0.4179,70,75,No,No,Hit epoch ceiling (75); highest Bal Acc across all runs; PCI 0=44% PCI 4=72%
+GAIN AG w=0.05,AG_WEIGHT=0.05 on Run 5 base,0.4566,0.4406,0.6762,0.8834,0.2763,0.4444,76,91,No,No,Neither paper target met
+GAIN AG w=0.02,AG_WEIGHT=0.02 on Run 5 base,0.4628,0.4109,0.6476,0.9032,0.2769,0.4581,49,64,Yes,Yes,Both targets met but all metrics worse than Run 5; Bal Acc below baseline; PCI 0=12%

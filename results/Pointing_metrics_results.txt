@@ -1,0 +1,18 @@
+=======================================================
+POINTING GAME RESULTS
+=======================================================
+
+AE=1  (near-miss)  (n=321)
+  Hit rate (relevant, not distracted) : 71.3%  (229/321)
+  Peak on irrelevant object (car/person): 2.5%  (8/321)
+  Peak on background (sky/trees/other)  : 26.2%  (84/321)
+
+AE>1  (harsh error)  (n=298)
+  Hit rate (relevant, not distracted) : 65.8%  (196/298)
+  Peak on irrelevant object (car/person): 3.0%  (9/298)
+  Peak on background (sky/trees/other)  : 31.2%  (93/298)
+
+All errors (AE!=0)  (n=619)
+  Hit rate (relevant, not distracted) : 68.7%  (425/619)
+  Peak on irrelevant object (car/person): 2.7%  (17/619)
+  Peak on background (sky/trees/other)  : 28.6%  (177/619)

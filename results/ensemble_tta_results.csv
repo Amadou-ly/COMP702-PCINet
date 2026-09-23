@@ -1,0 +1,7 @@
+Experiment,Config,Accuracy,Balanced Acc,MAE,Soft Acc (±1),Kappa,Paper MAE Met,Paper Soft Acc Met,Notes
+Run 7 (no TTA),PROB=0.7 α=2.0 OrdinalFL w=0.1,0.4653,0.4293,0.6377,0.9132,0.2779,Yes,Yes,Best retained single checkpoint
+Run 7 + TTA,Run 7 with horizontal flip TTA,0.4615,0.4246,0.6414,0.9107,,Yes,Yes,TTA hurt Run 7 on all metrics
+GAIN AG w=0.02 (no TTA),AG_WEIGHT=0.02 on Run 5 base,0.4628,0.4109,0.6476,0.9032,0.2769,Yes,Yes,
+GAIN AG w=0.02 + TTA,AG w=0.02 with horizontal flip TTA,0.4677,0.4195,0.6452,0.8995,0.2842,Yes,Yes,TTA helped AG w=0.02 on most metrics
+Ensemble 0.7/0.3,Run 7 × 0.7 + GAIN AG w=0.02 × 0.3,0.4677,0.4287,0.6228,0.9243,0.2791,Yes,Yes,Best result on paper primary metrics — MAE=0.6228 Soft Acc=0.9243
+Run 5 retrain + TTA,Fresh retrain (no fixed seed) + TTA,,0.3850,0.6489,0.8983,,Yes,Yes,PCI 0 recall=0%; confirms seed-unfixed retrain is unreliable
