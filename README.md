@@ -85,4 +85,4 @@ Split: Train = 3,755 | Val = 804 | Test = 806.
 
 ## References
 
-- **Laranjeira et al. (2024)** — *Automatic mapping of high-risk urban areas for Aedes aegypti infestation based on building facade image analysis.* PLOS One. https://doi.org/10.1371/journal.pone.0299006
+- **Laranjeira et al. (2024)** — *Automatic mapping of high-risk urban areas for Aedes aegypti infestation based on building facade image analysis.* [https://doi.org/10.1371/journal.pntd.0011811]
