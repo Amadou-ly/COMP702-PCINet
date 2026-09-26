@@ -71,7 +71,7 @@ Softmax probability averaging of Run 7 (×0.7) and GAIN AG w=0.02 (×0.3). Best 
 pip install -r notebooks/requirements.txt
 ```
 
-Notebooks were developed and run on [Kaggle](https://www.kaggle.com) (GPU T4 × 2). Dataset and model checkpoints are not included in this repository.
+Notebooks were developed and run on [Kaggle](https://www.kaggle.com) (GPU T4 × 2). The dataset and trained model checkpoints are not included in this repository: the facade images belong to the original PCINet authors, and the checkpoints exceed GitHub's file size limits.
 
 ---
 
